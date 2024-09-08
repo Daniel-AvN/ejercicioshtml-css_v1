@@ -1,0 +1,101 @@
+/*
+Colores
+    Background: #333
+
+    Tarjetas
+        Orange: hsl(31, 77%, 52%)
+        Cyan: hsl(184, 100%, 22%)
+        Dark cyan: hsl(179, 100%, 13%)
+    
+    Texto
+        Blanco al 0.75 de opacidad
+
+Fuentes de la página
+    Títulos
+        https://fonts.google.com/specimen/Big+Shoulders+Display
+        Estilo 600
+    Textos
+        https://fonts.google.com/specimen/Lexend+Deca
+        Estilo 400
+*/
+
+/* .text, */
+.title{
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 70px;
+    font-weight: 600;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+
+.text{
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.container{
+    width: 300px;
+    height: 450px;
+    padding: 50px;
+    position: absolute;
+}
+.link{
+    text-decoration: none;
+}
+.link-orange{
+    color: hsl(31, 77%, 52%);
+}
+
+.link-cyan{
+    color: hsl(184, 100%, 22%);
+}
+.link-dark-cyan{
+    color: hsl(179, 100%, 13%);
+}
+
+.link-container{
+    border-radius: 30px;
+    padding-top: 10px;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+.icon{
+    position: absolute;
+    /* top: 20px; */
+    left: 40px;
+}
+
+.tarjets{
+    /* overflow: hidden; */
+    width: 900px;
+    height: 450px;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    left: 300px;
+    top: 8px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    left: 600px;
+    top: 8px;
+}
+

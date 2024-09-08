@@ -1,0 +1,95 @@
+ body{
+  background-color: hsl(185, 75%, 39%);
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  overflow: hidden; /*de esta froma la pagina no se deborda y no tiene q hacer scroll*/
+ }
+
+ .bg-image{ /*estos son los circulos*/
+  position: absolute; /* de esta forma ya no ocupa sitio y todo se nos queda aqui pegado */
+ }
+
+ .bg-image-top{
+  top: -400px;
+  left: -100px;
+ }
+
+ .bg-image-bottom{
+  bottom: -450px;
+  right: -100px;
+ }
+
+ .card{
+  position: relative; /* se sobrepone la card de los circulos, es un pequeño truco, al tener relative se nos coloca donde nosotros queremos */
+  top: 30vh;
+  width: 400px;
+  height: 450px;
+  overflow: hidden; /* para solucionar los bordes con picos del header image(patron de fondo), las esquinas se dibujan pero no se ven*/
+  
+  /* para centrar la card: */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 20px;
+ }
+
+ .card-header{
+  position: relative;  /* le damos esa posicion porq */
+  height: 120px;
+  text-align: center;
+ }
+
+ .card-header-image{ /* esta es el patron de fondo */
+  position: absolute; /*pierde totalmente sus medidas*/
+  top: 0;
+  left: 0;
+  width: 100%;
+ }
+
+ .card-header-profile{
+  position: absolute; /*esto para tener la imagen encima del header-image*/
+  top: 90px; /*90 porq sabemos cuanto mide el patron (card-header-image) se le resta la photo la medida del patron */
+  left: 150px;
+  border-radius: 50px; /*imagen circular*/
+  border: 5px solid white;
+  background-color: #fff; /*solucionar el problema de renderizado de una linea azul, si le ponemos borde a una imagen es muy probable q se dibuje esa linea*/
+ }
+
+ .card-body{ /*esta incluye el nombre de usuario, edad y lugar*/
+  /* como la tarjeta tiene position relative, por lo tanto todo se colocará en relacion a la tarjeta */
+  position: absolute; /*pierde sus mediadas, por lo q se las debemos dar*/
+  top: 200px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+
+  border-bottom: 2px solid rgb(0 0 0 / 0.39);
+ }
+
+ .card-text{
+  margin: 0; /*como son parrafos y tienen un margin por defecto se lo quitamos*/
+  margin-bottom: 0.5em; /*espacio entre el nombre y la ciudad*/
+ }
+
+ .card-text-light{
+  color: hsl(227, 10%, 46%);
+ }
+
+ .card-number{
+  margin-bottom: 0.5em; /*darle espacio entre el margin y los numeros*/
+  font-size: 1.8em;
+ }
+
+ .card-footer{
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+ }
+
+ .card-stats{ /* como los card-stats son div y los divs ocupan todo el espacio disponible ya que son elementos de bloque */
+ display: inline-block ; /*solucionamos el problema de los div y ahora se ve mejor*/
+ margin: 0 0.5em; /*0 arriba y abajo, 0.5em para los lados (8px)*/
+ width: 100px;
+ text-align: center;
+ }

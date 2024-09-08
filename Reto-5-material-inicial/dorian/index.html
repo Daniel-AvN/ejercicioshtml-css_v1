@@ -1,0 +1,68 @@
+<div class="calculator">
+  <div class="display">0</div>
+  <button class="clear">C</button>
+  <button>7</button>
+  <button>8</button>
+  <button>9</button>
+  <button class="operator">÷</button>
+  <button>4</button>
+  <button>5</button>
+  <button>6</button>
+  <button class="operator">x</button>
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button class="operator">-</button>
+  <button>0</button>
+  <button>.</button>
+  <button class="operator">+</button>
+  <button class="equal">=</button>
+</div>
+
+
+<style>
+
+  .calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  background-color: #eee;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.clear {
+  background-color: #f00;
+  color: #fff;
+}
+
+.operator {
+  background-color: #ccc;
+}
+
+.equal {
+  background-color: #0f0;
+  color: #fff;
+}
+
+</style>

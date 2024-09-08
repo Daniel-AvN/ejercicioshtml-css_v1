@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Profile card component</title>
+  </head>
+  <body>
+    <img class="bg-image bg-image-top" src="assets/images/top-circle.svg" alt="top circle">
+    <img class="bg-image bg-image-bottom" src="assets/images/bottom-circle.svg" alt="bottom circle">
+
+    <!-- usamos article porq la tarjeta es contenido independiente -->
+    <article class="card">
+       <header class="card-header">
+          <img class="card-header-image" src="assets/images/card-pattern.svg" alt="patern card">
+          <img class="card-header-profile" src="/1tarjeta-perfil-usuario/manera-dorian/assets/images/victor.jpg" alt="profiel image">
+       </header>
+          <section class="card-body">
+             <p class="card-text">Victor Crest <span class="card-text card-text-light" > 26</span> </p><p class="card-text card-text-light"> London </p>
+          </section>          
+
+          <footer class="card-footer">
+              <div class="card-stats">
+                <p class="card-number">80k</p>
+                <p class="card-text card-text-light">folowers</p>
+              </div>
+              <div class="card-stats">
+                <p class="card-number">803k</p>
+                <p class="card-text card-text-light">likes</p>
+              </div>
+              <div class="card-stats">
+                <p class="card-number">1.4k</p>
+                <p class="card-text card-text-light">photos</p>
+              </div>
+          </footer>
+    </article>
+
+  </body>
+</html>

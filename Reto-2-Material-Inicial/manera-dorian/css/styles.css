@@ -1,0 +1,116 @@
+/*
+Colores
+  Tarjetas
+    Red: hsl(0, 78%, 62%)
+    Cyan: hsl(180, 62%, 55%)
+    Orange: hsl(34, 97%, 64%)
+    Blue: hsl(212, 86%, 64%)
+  Sombra
+    Dark Blue: hsl(240, 25%, 50%) al 20% de opacidad;
+  Texto
+    Grey: hsl(229, 6%, 66%)
+  Fondo de la tarjeta y del background
+    White: hsl(0, 0%, 93%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Poppins
+  Estilos 200, 400 y 600
+*/
+
+*{
+  box-sizing: border-box; /*pa q al dar padding no se rompa la estructura*/
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 93%);
+}
+.main-title{
+  display: block; /*para q los span se comporten como elementos de bloque y de salto de linea*/
+  font-size: 2.5rem;
+}
+
+.subtitle{ /*elemento de bloque*/
+  width: 30%; /*ancho*/
+  margin-right: auto;
+  margin-left: auto; /*centra al elemento en el centro*/
+}
+
+.cards{
+  position: relative; /*para poner todas las tarjetas respecto al contenedor*/
+  width: 1200px;
+  height: 550px;
+  margin: 5em auto; /*margen sup e inferior q necesitamos*/
+}
+
+.card{
+  position: absolute; /*con absolute pierde sus medidas*/
+  width: 350px;
+  height: 250px;
+  font-size: 0.9rem;
+  background-color: hsl(0, 0%, 93%);
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px hsl(240 25% 50% / 0.2); /*0.2 es 20% opacidad*/
+  padding: 0 2em; /* vertical 2em a los lados*/
+}
+
+.card__title,
+.card__text{
+  text-align: left; /*porq queremos q el title y text de las card esten alineados a la izqu*/
+}
+
+.card__icon{
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+.card--cyan{
+  border-top: 5px solid cyan ;
+}
+.card--red{
+  border-top: 5px solid red ;
+}
+.card--orange{
+  border-top: 5px solid orange ;
+}
+.card--blue{
+  border-top: 5px solid blue ;
+}
+
+.card--left,
+.card--right{
+  top: 150px;
+}
+.card--bottom,
+.card--top{
+  left: 425px;
+
+}
+.card--left{
+  left: 0;
+}
+.card--top{
+  top: 0;
+}
+.card--right{
+  right: 0;
+}
+
+.card--bottom{
+  bottom: 0;
+}
+
+.text-light{
+  color: hsl(229, 6%, 66%);
+}
+
+.text-thin{
+  font-weight: 200;
+}
+
+.text-bold{
+  font-weight: 600;
+}
